@@ -156,12 +156,12 @@ def main():
 
 
 def perform_ocr():
-    ocr = PaddleOCR(det_model_dir='./inference/Multilingual_PP-OCRv3_det_infer/',
-                    rec_model_dir='./inference/svtr_2024/',
+    ocr = PaddleOCR(det_model_dir='./Multilingual_PP-OCRv3_det_infer/',
+                    rec_model_dir='./svtr_2024/',
                     rec_char_dict_path='./multilingual_dict.txt',
                     show_log=True,
                     cls=False,
-                    vis_font_path='/doc/fonts/shruti.ttf',
+                    vis_font_path='/shruti.ttf',
                     use_gpu=True)
 
     # Iterate over directories
